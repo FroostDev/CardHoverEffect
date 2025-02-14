@@ -32,20 +32,20 @@ img {
 
 .img:hover + * {
     filter: brightness(0.6);
-    transform: translateZ(300px);
+    transform: translateZ(300px) rotateY(25deg);
 }
 
 .img:hover + * + * {
     filter: brightness(0.3);
-    transform: translateZ(200px);
+    transform: translateZ(200px) rotateY(35deg);
 }
 
 .img:has(+ *:hover) {
     filter: brightness(0.6);
-    transform: translateZ(300px);
+    transform: translateZ(300px) rotateY(-25deg);
 }
 
 .img:has(+ * + *:hover) {
     filter: brightness(0.3);
-    transform: translateZ(200px);
+    transform: translateZ(200px) rotateY(-35deg);
 }
